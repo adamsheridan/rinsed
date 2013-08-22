@@ -1,0 +1,341 @@
+@font-face {
+  font-family: 'latobold';
+  src: url("../fonts/lato/lato-bold-webfont.eot");
+  src: url("../fonts/lato/lato-bold-webfont.svg#latobold") format("svg"), url("../fonts/lato/lato-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato/lato-bold-webfont.woff") format("woff"), url("../fonts/lato/lato-bold-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latoregular';
+  src: url("../fonts/lato/lato-regular-webfont.eot");
+  src: url("../fonts/lato/lato-regular-webfont.svg#latoregular") format("svg"), url("../fonts/lato/lato-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato/lato-regular-webfont.woff") format("woff"), url("../fonts/lato/lato-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latolight';
+  src: url("../fonts/lato/lato-light-webfont.eot");
+  src: url("../fonts/lato/lato-light-webfont.svg#latolight") format("svg"), url("../fonts/lato/lato-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato/lato-light-webfont.woff") format("woff"), url("../fonts/lato/lato-light-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latoitalic';
+  src: url("../fonts/lato/lato-italic-webfont.eot");
+  src: url("../fonts/lato/lato-italic-webfont.svg#latoitalic") format("svg"), url("../fonts/lato/lato-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato/lato-italic-webfont.woff") format("woff"), url("../fonts/lato/lato-italic-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+html,
+button,
+input,
+select,
+textarea {
+  color: #222; }
+
+body {
+  font-size: 1em;
+  line-height: 1.4; }
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+img {
+  vertical-align: middle; }
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+textarea {
+  resize: vertical; }
+
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+.ie7 .title {
+  padding-top: 20px; }
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  text-indent: -9999px; }
+
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%; }
+
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+.invisible {
+  visibility: hidden; }
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  *zoom: 1; }
+
+/* ==========================================================================
+   asheridan.co.uk
+   ========================================================================== */
+.podcast {
+  background-image: url("../images/patterns-sprite.jpg"); }
+  .podcast.blue, .podcast:nth-child(1n) {
+    background-position: 0 0; }
+    .podcast.blue .title, .podcast:nth-child(1n) .title {
+      background: rgba(0, 82, 118, 0.5); }
+  .podcast.orange, .podcast:nth-child(2n) {
+    background-position: -133px 0; }
+    .podcast.orange .title, .podcast:nth-child(2n) .title {
+      background: rgba(119, 45, 0, 0.5); }
+  .podcast.purple, .podcast:nth-child(3n) {
+    background-position: -266px 0; }
+    .podcast.purple .title, .podcast:nth-child(3n) .title {
+      background: rgba(73, 0, 119, 0.5); }
+  .podcast.yellow, .podcast:nth-child(4n) {
+    background-position: -399px 0; }
+    .podcast.yellow .title, .podcast:nth-child(4n) .title {
+      background: rgba(123, 0, 93, 0.5); }
+  .podcast.pink, .podcast:nth-child(5n) {
+    background-position: -532px 0; }
+    .podcast.pink .title, .podcast:nth-child(5n) .title {
+      background: rgba(122, 123, 0, 0.5); }
+  .podcast.green, .podcast:nth-child(6n) {
+    background-position: -665px 0; }
+    .podcast.green .title, .podcast:nth-child(6n) .title {
+      background: rgba(44, 92, 0, 0.5); }
+
+body {
+  background: black; }
+
+.logo {
+  background: url("../images/logo.png") no-repeat;
+  height: 46px;
+  margin: 19px 0 0 0;
+  position: relative;
+  text-indent: -9999px;
+  width: 75px;
+  z-index: 10; }
+
+header[role="main"] {
+  height: 64px;
+  width: 100%; }
+  header[role="main"] h1 {
+    color: white;
+    font-family: "LatoBold", sans-serif;
+    font-size: 2em;
+    text-transform: uppercase; }
+
+.podcasts {
+  margin: 0 0 140px 0; }
+  .podcasts ul {
+    padding: 0;
+    margin: 0; }
+
+.podcast {
+  float: left;
+  height: 133px;
+  list-style: none;
+  margin: 10px 10px 0 0;
+  position: relative;
+  width: 133px; }
+  .podcast a {
+    display: block;
+    height: 133px;
+    width: 133px; }
+  .podcast .image {
+    position: absolute;
+    top: 0;
+    z-index: 1; }
+  .podcast .info li {
+    list-style: none; }
+  .podcast .title {
+    bottom: 0;
+    color: #fff;
+    font-family: "LatoBold", sans-serif;
+    font-size: 0.9em;
+    margin: 0;
+    padding: 5px;
+    position: absolute;
+    width: 123px;
+    z-index: 2; }
+  .podcast.playing .image {
+    display: none; }
+  .podcast.playing .title {
+    background: none; }
+  .podcast.playing .overlay {
+    background: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    width: 100%; }
+    .podcast.playing .overlay h2 {
+      color: #fff;
+      font-family: "LatoBold", sans-serif;
+      font-size: 1.1em;
+      margin: 0;
+      padding: 5px;
+      position: absolute;
+      top: 0;
+      width: 123px; }
+  .podcast .menu {
+    background: rgba(255, 255, 255, 0.3);
+    display: none;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    z-index: 3; }
+    .podcast .menu a {
+      background: url("../images/play-download.png") no-repeat;
+      color: #fff;
+      display: block;
+      height: 50%;
+      font-family: "LatoBold", sans-serif;
+      line-height: 66px;
+      text-align: center;
+      text-decoration: none;
+      text-indent: -9999px;
+      width: 100%; }
+      .podcast .menu a.play {
+        background-position: 49px 16px; }
+      .podcast .menu a.download {
+        background-position: 49px -50px; }
+      .podcast .menu a:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+        color: #000; }
+  .podcast:hover .title {
+    display: none; }
+  .podcast:hover .image {
+    opacity: 0.4; }
+  .podcast:hover .menu {
+    display: block; }
+
+.player {
+  background: #0c0c0c;
+  bottom: 0;
+  height: 64px;
+  position: fixed;
+  width: 100%;
+  z-index: 5; }
+  .player .controls li {
+    opacity: 0.2; }
+  .player.playing .controls li {
+    opacity: 0.8; }
+    .player.playing .controls li:hover {
+      opacity: 1; }
+  .player.paused .controls li {
+    opacity: 0.5; }
+    .player.paused .controls li:hover {
+      opacity: 1; }
+
+.controls {
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  width: 1144px; }
+  .controls ul {
+    margin: 0;
+    padding: 12px 0 0 0; }
+  .controls li {
+    background: url("../images/controls-sprite.png");
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 40px;
+    width: 40px; }
+    .controls li a {
+      display: block;
+      height: 100%;
+      width: 100%; }
+    .controls li.unpause {
+      margin-left: 20px; }
+    .controls li.pause {
+      background-position: -40px 0;
+      margin-left: 20px; }
+    .controls li.mute {
+      background-position: -280px 0;
+      float: right;
+      margin-right: 20px; }
+      .controls li.mute:hover {
+        background-position: -320px 0; }
+    .controls li.mute.muted {
+      background-position: -320px 0; }
+      .controls li.mute.muted:hover {
+        background-position: -280px 0; }
+
+.playing-meta {
+  color: white;
+  left: 80px;
+  position: absolute;
+  top: 20px;
+  width: 500px; }
+  .playing-meta h1 {
+    float: left;
+    font-family: "LatoBold", sans-serif;
+    font-size: 1.3em;
+    margin: 0;
+    padding: 0; }
+
+.container {
+  margin: 0 auto;
+  padding: 0 0 40px 0;
+  width: 1144px; }
+
+#canvas {
+  left: 0;
+  position: fixed;
+  top: 0; }

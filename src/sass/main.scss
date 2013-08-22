@@ -1,0 +1,337 @@
+/* ==========================================================================
+   asheridan.co.uk
+   ========================================================================== */
+
+// Colours
+$black: #000;
+$white: #fff;
+$lightgray: #e5e5e5;
+$darkgray: #323232;
+
+$turquoise: #1abc9c;
+$alizarin: #e74c3c;
+$midnightblue: #2c4050;
+$wetasphalt: #34495e;
+$belizehold: #2980b9;
+$peterriver: #3498db;
+$sunflower: #f1c40f;
+$wisteria: #8e44ad;
+$pumpkin: #d35400;
+
+// Font-families
+$latolight: 'LatoLight', sans-serif;
+$latoregular: 'LatoRegular', sans-serif;
+$latobold: 'LatoBold', sans-serif;
+
+// Podcast Spriting
+.podcast {
+	background-image: url('../images/patterns-sprite.jpg');
+
+	&.blue, &:nth-child(1n) {
+		background-position: 0 0;
+
+		.title {
+			background: rgba(0, 82, 118, 0.5);
+		}
+	}
+
+	&.orange, &:nth-child(2n) {
+		background-position: -133px 0;
+
+		.title {
+			background: rgba(119, 45, 0, 0.5)
+		}
+	}
+
+	&.purple, &:nth-child(3n) {
+		background-position: -266px 0;
+
+		.title {
+			background: rgba(73, 0, 119, 0.5);
+		}
+	}
+
+	&.yellow, &:nth-child(4n) {
+		background-position: -399px 0;
+
+		.title {
+			background: rgba(123, 0, 93, 0.5);
+		}
+	}
+
+	&.pink, &:nth-child(5n) {
+		background-position: -532px 0;
+
+		.title {
+			background: rgba(122, 123, 0, 0.5);
+		}
+	}
+
+	&.green, &:nth-child(6n) {
+		background-position: -665px 0;
+
+		.title {
+			background: rgba(44, 92, 0, 0.5)
+		}
+	}
+}
+
+body {
+	background: $black;
+}
+
+.logo {
+	background: url('../images/logo.png') no-repeat;
+	height: 46px;
+	margin: 19px 0 0 0;
+	position: relative;
+	text-indent: -9999px;
+	width: 75px;
+	z-index: 10;
+}
+
+header[role="main"] {
+	height: 64px;
+	width: 100%;
+
+	h1 {
+		color: $white;
+		font-family: $latobold;
+		font-size: 2em;
+		text-transform: uppercase;
+	}
+}
+
+.podcasts {
+	margin: 0 0 140px 0;
+
+	ul {
+		padding: 0;
+		margin: 0;
+	}
+}
+
+.podcast {
+	float: left;
+	height: 133px;
+	list-style: none;
+	margin: 10px 10px 0 0;
+	position: relative;
+	width: 133px;
+
+	a {
+		display: block;
+		height: 133px;
+		width: 133px;
+	}
+
+	.image {
+		position: absolute;
+		top: 0;
+		z-index: 1;
+	}
+
+	.info li {
+		list-style: none;
+	}
+
+	.title {
+		bottom: 0;
+		color: #fff;
+		font-family: $latobold;
+		font-size: 0.9em;
+		margin: 0;
+		padding: 5px;
+		position: absolute;
+		width: 123px;
+		z-index: 2;
+	}
+
+	&.playing {
+
+		.image {
+			display: none;
+		}
+
+		.title {
+			background: none;
+		}
+
+		.overlay {
+			background: rgba(0,0,0, 0.8);
+			height: 100%;
+			width: 100%;
+
+			h2 {
+				color: #fff;
+				font-family: $latobold;
+				font-size: 1.1em;
+				margin: 0;
+				padding: 5px;
+				position: absolute;
+				top: 0;
+				width: 123px;
+			}
+		}
+	}
+
+	.menu {
+		background: rgba(255, 255, 255, 0.3);
+		display: none;
+		height: 100%;
+		position: relative;
+		width: 100%;
+		z-index: 3;
+
+		a {
+			background: url('../images/play-download.png') no-repeat;
+			color: #fff;
+			display: block;
+			height: 50%;
+			font-family: $latobold;
+			line-height: 66px;
+			text-align: center;
+			text-decoration: none;
+			text-indent: -9999px;
+			width: 100%;
+
+			&.play {
+				background-position: 49px 16px;
+			}
+
+			&.download {
+				background-position: 49px -50px;
+			}
+
+			&:hover {
+				background-color: rgba(255, 255, 255, 0.5);
+				color: #000;
+			}
+		}
+	}
+
+	&:hover {
+		.title {
+			display: none;
+		}
+
+		.image {
+			opacity: 0.4;
+		}
+
+		.menu {
+			display: block;
+		}
+	}
+}
+
+.player {
+	background: #0c0c0c;
+	bottom: 0;
+	height: 64px;
+	position: fixed;
+	width: 100%;
+	z-index: 5;
+
+	.controls li {
+		opacity: 0.2;
+	}
+
+	&.playing .controls li {
+		opacity: 0.8;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	&.paused .controls li {
+		opacity: 0.5;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+}
+
+.controls {
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+	width: 1144px;
+
+	ul {
+		margin: 0;
+		padding: 12px 0 0 0;
+	}
+
+	li {
+		background: url('../images/controls-sprite.png');
+		cursor: pointer;
+		display: block;
+		float: left;
+		height: 40px;
+		width: 40px;
+
+		a {
+			display: block;
+			height: 100%;
+			width: 100%;
+		}
+
+		&.unpause {
+			margin-left: 20px;
+		}
+
+		&.pause {
+			background-position: -40px 0;
+			margin-left: 20px;
+		}
+
+		&.mute {
+			background-position: -280px 0;
+			float: right;
+			margin-right: 20px;
+
+			&:hover {
+				background-position: -320px 0;
+			}
+		}
+
+		&.mute.muted {
+			background-position: -320px 0;
+
+			&:hover {
+				background-position: -280px 0;
+			}
+		}
+	}
+}
+
+.playing-meta {
+	color: $white;
+	left: 80px;
+	position: absolute;
+	top: 20px;
+	width: 500px;
+
+	h1 {
+		float: left;
+		font-family: $latobold;
+		font-size: 1.3em;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 0 40px 0;
+	width: 1144px;
+}
+
+#canvas {
+	left: 0;
+	position: fixed;
+	top: 0;
+}
